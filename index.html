@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olympiades Gauloises 🏛️</title>
+<title>Olympiades Jules César 🏛️</title>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
 
 <!-- ╔══════════════════════════════════════════════════════════╗
@@ -198,15 +198,15 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
    DONNÉES TRIBUS & CATÉGORIES
 ══════════════════════════════════════════════════════ */
 const TRIBES = [
-  {id:'bretons',   name:'Les Bretons',     emo:'☕', bg:'#281c08', acc:'#806018'},
-  {id:'egyptiens', name:'Les Égyptiens',   emo:'🏺', bg:'#402808', acc:'#b07018'},
-  {id:'normands',  name:'Les Normands',    emo:'🛡️', bg:'#0d1c36', acc:'#2060b0'},
-  {id:'pirates',   name:'Les Pirates',     emo:'🏴‍☠️', bg:'#0a0a18', acc:'#5050c0'},
-  {id:'hispaniq',  name:'Les Hispaniques', emo:'🌞', bg:'#4a2008', acc:'#e07018'},
-  {id:'grecs',     name:'Les Grecs',       emo:'🏛️', bg:'#0e2240', acc:'#2870c8'},
-  {id:'chinois',   name:'Les Chinois',     emo:'🐉', bg:'#3a0a0a', acc:'#c82020'},
-  {id:'indiens',   name:'Les Indiens',     emo:'🪔', bg:'#2a1a00', acc:'#d48010'},
-  {id:'romains',   name:'Les Romains',     emo:'⚔️', bg:'#540e0e', acc:'#d42020'},
+  {id:'bretons',   name:'Les Alcoolos',     emo:'☕', bg:'#281c08', acc:'#806018'},
+  {id:'egyptiens', name:'Les Aplats',   emo:'🏺', bg:'#402808', acc:'#b07018'},
+  {id:'normands',  name:'Les Radins',    emo:'🛡️', bg:'#0d1c36', acc:'#2060b0'},
+  {id:'pirates',   name:'Les Voyous',     emo:'🏴‍☠️', bg:'#0a0a18', acc:'#5050c0'},
+  {id:'hispaniq',  name:'Les Voleurs', 	emo:'🌞', bg:'#4a2008', acc:'#e07018'},
+  {id:'grecs',     name:'Les Kebabs',       emo:'🏛️', bg:'#0e2240', acc:'#2870c8'},
+  {id:'chinois',   name:'Les Jaunes',     emo:'🐉', bg:'#3a0a0a', acc:'#c82020'},
+  {id:'indiens',   name:'Les Rouges',     emo:'🪔', bg:'#2a1a00', acc:'#d48010'},
+  {id:'romains',   name:'Les Ritals',     emo:'⚔️', bg:'#540e0e', acc:'#d42020'},
 ];
 const ALL_IDS = TRIBES.map(t => t.id);
 
@@ -430,7 +430,7 @@ function buildConfigHelp() {
   <div class="screen" style="max-width:640px">
     <div style="text-align:center;padding:2.5rem 0 1.5rem">
       <div style="font-size:3rem;margin-bottom:.6rem">🏛️</div>
-      <h1 class="title-main" style="font-size:clamp(1.4rem,4vw,2.2rem)">OLYMPIADES GAULOISES</h1>
+      <h1 class="title-main" style="font-size:clamp(1.4rem,4vw,2.2rem)">OLYMPIADES JULES CÉSAR</h1>
       <p class="title-sub" style="margin-top:.4rem">Configuration requise</p>
     </div>
     <div class="glass">
@@ -461,7 +461,7 @@ function buildWaiting() {
   <div class="screen" style="text-align:center;padding-top:3.5rem">
     <div id="titlezone" style="display:inline-block;cursor:default">
       <div class="shimmer" style="font-size:3.5rem;margin-bottom:.8rem">🏛️</div>
-      <h1 class="title-main">OLYMPIADES<br>GAULOISES</h1>
+      <h1 class="title-main">OLYMPIADES<br>JULES CÉSAR</h1>
     </div>
     <p class="title-sub" style="margin-top:.6rem">Le grand tournoi des tribus</p>
     <div style="margin-top:3rem;padding:2rem 2.5rem;border:1px solid rgba(212,160,23,.2);border-radius:14px;background:rgba(255,255,255,.03);display:inline-block">
@@ -487,11 +487,11 @@ function buildLiveBoard() {
     <div style="text-align:center;padding:1.5rem 0 1rem">
       <div id="titlezone" style="display:inline-block;cursor:default">
         <div style="font-size:2.5rem;margin-bottom:.5rem">🏛️</div>
-        <h1 class="title-main">OLYMPIADES GAULOISES</h1>
+        <h1 class="title-main">OLYMPIADES JULES CÉSAR</h1>
       </div>
-      <p class="title-sub" style="margin-top:.3rem">Classement en direct</p>
+      <p class="title-sub" style="margin-top:.3rem">Classement des incultes de Barbares</p>
       <div style="margin-top:.7rem;font-size:.72rem;color:#8a7050">
-        ${filled} / ${CATEGORIES.length} épreuves notées
+        des plus nuls au plus mauvais
       </div>
       <div style="margin-top:.5rem;font-size:.62rem;color:#4a3820;letter-spacing:.12em">
         <span class="live-dot"></span>MISE À JOUR EN TEMPS RÉEL
@@ -521,7 +521,10 @@ function buildLiveBoard() {
     ${buildDetailTable()}
 
     <div style="text-align:center;margin-top:2rem;font-size:.62rem;color:#4a3820;letter-spacing:.15em">
-      🐗 Par Toutatis ! Que le meilleur gagne !
+      🐗 Par Toutatis ! c'est toujours Obelix qui gagne à la fin !
+    </div>
+    <div style="text-align:center;margin-top:1rem">
+      <img src="photo.jpg" alt="Souvenir des Olympiades" style="max-width:100%;width:420px;border-radius:12px;border:1px solid rgba(212,160,23,.3);box-shadow:0 4px 22px rgba(0,0,0,.5)">
     </div>
   </div>`;
 }
