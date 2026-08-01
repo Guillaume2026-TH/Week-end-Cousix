@@ -198,13 +198,13 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
    DONNÉES TRIBUS & CATÉGORIES
 ══════════════════════════════════════════════════════ */
 const TRIBES = [
-  {id:'bretons',   name:'Les Alcoolos',     emo:'☕', bg:'#281c08', acc:'#806018'},
+ {id:'bretons',   name:'Les Alcoolos,     emo:'☕', bg:'#281c08', acc:'#806018'},
   {id:'egyptiens', name:'Les Aplats',   emo:'🏺', bg:'#402808', acc:'#b07018'},
   {id:'normands',  name:'Les Radins',    emo:'🛡️', bg:'#0d1c36', acc:'#2060b0'},
-  {id:'pirates',   name:'Les Voyous',     emo:'🏴‍☠️', bg:'#0a0a18', acc:'#5050c0'},
+  {id:'pirates',   name:'Les Voyouss',     emo:'🏴‍☠️', bg:'#0a0a18', acc:'#5050c0'},
   {id:'hispaniq',  name:'Les Voleurs', emo:'🌞', bg:'#4a2008', acc:'#e07018'},
   {id:'grecs',     name:'Les Kebabs',       emo:'🏛️', bg:'#0e2240', acc:'#2870c8'},
-  {id:'chinois',   name:'Les Jaunes',     emo:'🐉', bg:'#3a0a0a', acc:'#c82020'},
+  {id:'chinois',   name:'Les Ptits jaunes',     emo:'🐉', bg:'#3a0a0a', acc:'#c82020'},
   {id:'indiens',   name:'Les Rouges',     emo:'🪔', bg:'#2a1a00', acc:'#d48010'},
   {id:'romains',   name:'Les Ritals',     emo:'⚔️', bg:'#540e0e', acc:'#d42020'},
 ];
@@ -520,7 +520,7 @@ function buildLiveBoard() {
     <!-- Tableau détail par catégorie -->
     ${buildDetailTable()}
 
-    <div style="text-align:center;margin-top:2rem;font-size:1.4rem;font-weight:900;color:#ffffff;letter-spacing:.08em;text-shadow:0 2px 10px rgba(0,0,0,.6)">
+    <div style="text-align:center;margin-top:2rem;font-size:clamp(1.8rem,5vw,2.6rem);font-weight:900;color:#ffffff;letter-spacing:.06em;line-height:1.3;text-shadow:0 3px 14px rgba(0,0,0,.75)">
       🐗 Par Toutatis ! c'est toujours Obelix qui gagne à la fin !
     </div>
     <div style="text-align:center;margin-top:1.2rem">
